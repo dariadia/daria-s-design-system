@@ -1,0 +1,39 @@
+---
+name: List
+route: /components/List
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { List, Badge } from '../components'
+
+# List
+
+List is an `<ul>` element with the corresponding `<li>` schildren. List is better for SEO than just using `<Flex />`.
+
+
+## Properties
+
+<Props of={List} />
+
+## Basic usage
+
+<List>
+  <span>I am a cool book!</span>
+  <span>Hello world</span>
+  <span>Lorem ipsum</span>
+</List>
+
+## Advanced?
+
+<Playground>
+  <List liSx={{ border: '1px solid red'}} direction="row">
+    <Badge inlineBlock m="s" bg="socialFacebook" color="white">Hallo Welt</Badge>
+  </List>
+
+  <List>
+    <Badge m="s" bg="socialInstagram" color="white">Hello world</Badge>
+    <Badge m="s" bg="socialFacebook" color="white">Hallo Welt</Badge>
+  </List>
+</Playground>

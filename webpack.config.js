@@ -24,7 +24,7 @@ module.exports = {
     path: path.resolve(__dirname, 'lib'),
     libraryTarget: 'umd',
     globalObject: 'this',
-    library: '@bookmate/web-ui-kit',
+    library: '@dariadia/danni-kit',
   },
   externals : {
     react: 'commonjs react',

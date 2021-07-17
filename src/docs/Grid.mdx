@@ -1,0 +1,60 @@
+---
+name: Grid
+route: /components/Grid
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { Grid, InlineGrid, Box } from '../components'
+
+# Grid
+
+Grid Layout is a 2-dimensional system, meaning it can handle both columns and rows, unlike Flex, which is largely a 1-dimensional system. 
+
+## Properties
+
+<Props of={Grid} />
+
+# Grid Kinds
+
+## Grid (default)
+
+<Grid
+    mt={16}
+    sx={{
+      gridTemplateColumns: 'repeat(4, 1fr)',
+      gridGap: 16,
+    }}
+  >
+    <Box bg="bgGradientAccent" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" textAlign="center">Sample box</Box>
+    <Box color="white" bg="bgGlassDark" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" textAlign="center">Sample box</Box>
+</Grid>
+
+## InlineGrid
+
+<InlineGrid>
+  <Box bg="bgGradientAccent" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" textAlign="center">Sample box</Box>
+  <Box color="white" bg="bgGlassDark" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" textAlign="center">Sample box</Box>
+</InlineGrid>
+
+
+## Advanced?
+
+<Playground>
+  <Grid
+    mt={16}
+    sx={{
+      gridTemplateColumns: 'repeat(4, 1fr)',
+      gridGap: 16,
+    }}
+  >
+    <Box bg="bgGradientAccent" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" textAlign="center">Sample box</Box>
+    <Box color="white" bg="bgGlassDark" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" textAlign="center">Sample box</Box>
+    <Box bg="bgGradientAccentDark" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" color="white" textAlign="center">Sample box</Box>
+    <Box bg="bgGradientAccent" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" textAlign="center">Sample box</Box>
+    <Box color="white" bg="bgGlassDark" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" textAlign="center">Sample box</Box>
+    <Box bg="bgGradientAccentDark" sx={{ borderRadius: "m" }} width="200px" p="xs" my="l" color="white" textAlign="center">Sample box</Box>
+  </Grid>
+</Playground>
+

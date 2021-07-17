@@ -1,0 +1,29 @@
+---
+name: Link
+route: /components/Link
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { Link } from '../components'
+
+# Link
+
+Link is either an `<a>` element or a `<span>` element (aka pseudo link). The properties define how the element behaves on user click. 
+
+## Properties
+
+<Props of={Link} />
+
+## Basic usage
+
+<Link href="https://www.google.com/">Google this book!</Link>
+
+## Advanced?
+
+<Playground>
+  <Link href="https://www.google.com/" target="_blank">Google this book!</Link>
+  <br />
+  <Link>You can't open this page till you do something else</Link>
+</Playground>

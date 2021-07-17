@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Kazimir;
+  font-weight: 300;
+  font-display: swap;
+  src: url("kazimir/kazimir-light.woff2") format("woff2");
+}
+@font-face {
+  font-family: Graphik;
+  font-weight: 400;
+  font-display: swap;
+  src: url("graphik/graphik-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: Graphik;
+  font-weight: 500;
+  font-display: swap;
+  src: url("graphik/graphik-medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: Graphik;
+  font-weight: 600;
+  font-display: swap;
+  src: url("graphik/graphik-medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: Graphik;
+  font-weight: 700;
+  font-display: swap;
+  src: url("graphik/graphik-black.woff2") format("woff2");
+}

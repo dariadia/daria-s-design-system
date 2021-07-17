@@ -1,0 +1,33 @@
+---
+name: Icons
+route: /design-system/Icons
+menu: Design System
+---
+
+import { Playground, Props } from 'docz'
+import { Grid, Icon } from '../components'
+
+
+# Icon Types
+
+Available icon types are listed below:
+
+<Grid
+  mt={16}
+  textAlign="center"
+  sx={{
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    gridGap: 16,
+  }}
+>
+  <span>book</span>
+  <Icon name="book" height="20px" width="20px"/>
+</Grid>
+
+
+## Advanced?
+
+<Playground>
+  <Icon name="book" height="32px" width="32px" fill="bgEmotionPink" stroke="blue" />
+</Playground>
+

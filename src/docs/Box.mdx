@@ -1,0 +1,48 @@
+---
+name: Box
+route: /components/Box
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { Box, Card } from '../components'
+
+# Box
+
+Box is box
+
+## Properties
+
+<Props of={Box} />
+
+## Basic usage
+
+<pre>
+  <Box>Empty box</Box>
+</pre>
+
+## Advanced?
+
+<Playground>
+<Box bg="bgGradientAccent" sx={{ borderRadius: "m" }} width="400px" p="xs" my="l" textAlign="center">Sample box</Box>
+
+
+<Box
+  bg="bgEmotionSkyBlue" 
+  color="black" 
+  sx={{ borderRadius: "circle" }}
+  width="200px"
+  height="200px"
+  p="l"
+  display="flex"
+  flex={1}
+  justifyContent="center"
+  alignItems="center"
+  fontSize="144px"
+>
+  BM
+</Box>
+<Card mt="xl" p="m" bg="bgSecondary" width="450px">Hello world. Hallo Welt! Guten Morgen</Card>
+</Playground>
+

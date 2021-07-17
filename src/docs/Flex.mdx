@@ -1,0 +1,40 @@
+---
+name: Flex
+route: /components/Flex
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { Flex } from '../components'
+
+# Flex
+
+Flex is flex-box
+
+## Properties
+
+<Props of={Flex} />
+
+## Basic usage
+
+<Flex>Empty flexbox</Flex>
+
+## Advanced?
+
+<Playground>
+  <Flex
+    bg="socialFacebook"
+    color="white"
+    sx={{ borderRadius: 'l' }}
+    width="200px"
+    height="200px"
+    p="xl"
+    justifyContent="space-between"
+    alignItems="center"
+    fontSize="32px"
+  >
+    <b>A</b>
+    <span>z</span>
+  </Flex>
+</Playground>

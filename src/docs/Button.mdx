@@ -1,0 +1,75 @@
+---
+name: Button
+route: /components/Button
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { Grid, Button, Badge, TopicBadge } from '../components'
+
+# Button
+
+Button is a box which one can click. Buttons can be disabled if the user has to complete something first, e.g. fill out an input.
+
+## Properties
+
+<Props of={Button} />
+
+## Basic usage
+
+<pre>
+  <Button onClick={() => alert('Hello World!')}>Click me!</Button>
+</pre>
+
+## Advanced?
+
+<Playground>
+  <Button
+    border="1px solid textSecondary"
+    borderOnHover="brandGreen"
+    colorOnHover="brandOrange"
+    bg="bgEmotionSkyBlue" 
+    color="textPrimaryDark"
+    width="auto" 
+    p="s" 
+    my="l" 
+    textAlign="center"
+    activeColor="actionAccent"
+    transition="slow"
+    onClick={() => alert('Hello World!')}
+  >Hover me, and I change colour!</Button>
+    <Button
+    border="1px solid textSecondary"
+    borderOnHover="brandGreen"
+    bg="bgEmotionSkyBlue" 
+    color="textPrimaryDark"
+    width="auto" 
+    p="s" 
+    my="l" 
+    textAlign="center"
+    activeColor="actionAccent"
+    transition="slow"
+  >I change colours together!</Button>
+    <Button
+    bg="bgEmotionSkyBlue" 
+    color="textPrimaryDark"
+    width="400px" 
+    p="s" 
+    my="l" 
+    textAlign="center"
+    onClick={() => alert('Hello World!')}
+  >Hover me!</Button>
+  <Button
+    bg="bgSecondaryDark" 
+    color="textPrimaryDark"
+    width="400px" 
+    p="m" 
+    my="l"
+    textAlign="center"
+    disabled
+  >I am disabled</Button>
+  <Badge>Badge</Badge>
+  <TopicBadge my="l" color="textSecondary" activeColor="textAccent">Cool ToPic</TopicBadge>
+</Playground>
+

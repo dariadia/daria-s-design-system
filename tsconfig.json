@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": ["es2019", "dom"],
+    "target": "es2019",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationMap": false,
+    "sourceMap": true,
+    "outDir": "lib",
+    "strict": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "types": ["node", "react"]
+  },
+  
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "./src/gatsby-theme-docz",
+    "./src/docs/**/*",
+    "./src/**/*.mdx",
+    ".cache",
+    ".docz",
+    "public",
+    "node_modules",
+    "dist",
+    "**/*.cy-spec.*"
+  ]
+}
