@@ -8,12 +8,7 @@ import { filters } from './filters'
 import { transitions } from './transitions'
 
 export type Color = keyof typeof ThemeColors.colors
-export type TextColor = keyof typeof ThemeColors.textColors
 export type BgColor = keyof typeof ThemeColors.bgColors
-export type LineColor = keyof typeof ThemeColors.lineColors
-export type ActionColor = keyof typeof ThemeColors.actionColors
-export type SocialColor = keyof typeof ThemeColors.socialColors
-export type BrandColor = keyof typeof ThemeColors.brandColors
 
 export type BorderRadius = keyof typeof radii
 export type Elevation = keyof typeof shadows
