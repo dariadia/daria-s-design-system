@@ -1,23 +1,20 @@
 export const bgColours = {
-  bgEmotionOrange: '#FEEDCA' /* 👍 */,
-  bgEmotionGreyishGreen: '#EAEEEC' /* 👎 */,
-  bgEmotionYellow: '#FCF1BB' /* 😄 */,
-  bgEmotionRed: '#FBE2E2' /* 🚀 */,
-  bgEmotionSkyBlue: '#DFF7F9' /* 🎯 */,
-  bgEmotionDarkBlue: '#8BCCEE' /* 💤 */,
-  bgEmotionBrown: '#BDAFA4' /* 🙈 */,
-  bgEmotionPink: '#FCE7F4' /* 💞 */,
-  bgEmotionMint: '#E2F1EB' /* 🐼 */,
-  bgEmotionSkin: '#deb68e' /* 💡 */,
-  bgEmotionPurple: '#EAE7F3' /* 🔮 */,
-  bgEmotionGrey: '#B7B7B7' /* 💀 */,
-  bgEmotionGrassGreen: '#DBF1D4' /* 🌴 */,
+  white: 'white',
+  green: '#07624D',
+  meadow: '#169D75',
+  bone: '#E2D3C0',
+  locust: '#A9AD90',
+  mist: '#DBDDD0',
 }
 
 export const textColours = {
   white: 'white',
   black: 'black',
-  darkGreen: '#006400',
+  accent: '#07624D',
+  bone: '#E2D3C0',
+  meadow: '#169D75',
+  locust: '#A9AD90',
+  mist: '#DBDDD0',
 }
 
 export const colours = {
