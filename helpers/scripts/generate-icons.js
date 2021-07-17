@@ -38,7 +38,7 @@ for (const icon of icons) {
         '@svgr/plugin-jsx',
         '@svgr/plugin-prettier'
       ],
-      // Replace hardcoded colors with `currentColor`
+      // Replace hardcoded colours with `currentColor`
       svgoConfig: {
         plugins: [{ convertColors: { currentColor: true } }]
       },

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { bgColors } from '../theme/colors'
+import { bgColours } from '../theme/colours'
 import { theme } from '../theme'
 import { transitions } from '../theme/transitions'
 
@@ -19,13 +19,13 @@ const Overlay = styled(Box)<ConstrainedBoxProps>`
   bottom: 0;
   right: 0;
   z-index: ${theme.zIndices.heavens};
-  background: ${bgColors.bgOverlayDark};
+  background: ${bgColours.bgEmotionDarkBlue};
   animation: fadeIn ${transitions.default};
 `
 
 const StyledPopup = styled(Box)<PopupProps>`
   max-width: ${({ mode }) => (mode === 'sized' ? 'calc(100% - 16px)' : '100%')};
-  background: ${({ bg }) => (bg ? bgColors[bg] : 'white')};
+  background: ${({ bg }) => (bg ? bgColours[bg] : 'white')};
 `
 
 export const Popup: React.FC<PopupProps> = ({

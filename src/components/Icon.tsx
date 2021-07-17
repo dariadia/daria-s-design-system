@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Box } from './Box'
-import { Color } from '../theme'
-import { colors } from '../theme/colors'
+import { Colour } from '../theme'
+import { colours } from '../theme/colours'
 import { BoxSxProps } from '../index.d'
 import * as Icons from '../assets/icons'
 
 type Props = BoxSxProps & {
   size?: string
-  stroke?: Color
+  stroke?: Colour
   strokeWidth?: number
-  fill?: Color
+  fill?: Colour
   inlineBlock?: boolean
   center?: boolean
 }
@@ -30,7 +30,7 @@ const StyledBox = styled(Box)<Props>`
     return center ? `svg { margin: 0 auto; }` : ''
   }}
   ${({ fill }) => {
-    return fill ? `svg path, svg rect { fill: ${colors[fill] || fill}; }` : ''
+    return fill ? `svg path, svg rect { fill: ${colours[fill] || fill}; }` : ''
   }}
   ${({ strokeWidth }) => {
     return strokeWidth
@@ -39,7 +39,7 @@ const StyledBox = styled(Box)<Props>`
   }}
   svg path {
     stroke: ${({ stroke }) =>
-      stroke ? `${colors[stroke] || stroke};` : 'currentColor;'};
+      stroke ? `${colours[stroke] || stroke};` : 'currentColor;'};
   }
   > * {
     display: block;

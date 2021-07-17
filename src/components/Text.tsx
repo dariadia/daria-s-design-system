@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Box, ConstrainedBoxProps } from './Box'
-import { TextColor } from '../theme'
-import { colors } from '../theme/colors'
+import { TextColour } from '../theme'
+import { colours } from '../theme/colours'
 import { transitions } from '../theme/transitions'
 
 export interface ConstrainedTextProps extends ConstrainedBoxProps {
-  color?: TextColor
+  color?: TextColour
   kind?: 'serif' | 'sansSerif'
-  activeColor?: TextColor
+  activeColor?: TextColour
 }
 
 export const TextBase: React.FC<ConstrainedTextProps> = React.forwardRef<
@@ -79,7 +79,7 @@ export const HoverableText = styled(TextBase)<ConstrainedTextProps>`
     cursor: pointer;
     transition: ${transitions.default} color;
     color: ${({ activeColor }) =>
-      activeColor ? colors[activeColor] : colors.textAccent};
+      activeColor ? colours[activeColor] : colours.darkGreen};
   }
 `
 

@@ -1,19 +1,15 @@
 import { breakpoints } from './breakpoints'
 import { space } from './space'
-import * as ThemeColors from './colors'
+import * as ThemeColours from './colours'
 import { font } from './font'
 import { radii } from './radii'
 import { shadows } from './shadows'
 import { filters } from './filters'
 import { transitions } from './transitions'
 
-export type Color = keyof typeof ThemeColors.colors
-export type TextColor = keyof typeof ThemeColors.textColors
-export type BgColor = keyof typeof ThemeColors.bgColors
-export type LineColor = keyof typeof ThemeColors.lineColors
-export type ActionColor = keyof typeof ThemeColors.actionColors
-export type SocialColor = keyof typeof ThemeColors.socialColors
-export type BrandColor = keyof typeof ThemeColors.brandColors
+export type Colour = keyof typeof ThemeColours.colours
+export type BgColour = keyof typeof ThemeColours.bgColours
+export type TextColour = keyof typeof ThemeColours.textColours
 
 export type BorderRadius = keyof typeof radii
 export type Elevation = keyof typeof shadows
@@ -24,7 +20,7 @@ export type Space = keyof typeof space
 export const theme = {
   breakpoints,
   space,
-  colors: ThemeColors.colors,
+  colours: ThemeColours.colours,
   ...font,
 
   radii,

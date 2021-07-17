@@ -15,7 +15,7 @@ export const Link: React.FC<LinkProps> = React.forwardRef<any, LinkProps>(
       scale="typography.text"
       as="a"
       variant="link"
-      color="textPrimary"
+      color="black"
       sx={{ cursor: 'pointer' }}
       {...props}
     />

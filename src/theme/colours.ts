@@ -1,4 +1,4 @@
-export const bgColors = {
+export const bgColours = {
   bgEmotionOrange: '#FEEDCA' /* 👍 */,
   bgEmotionGryishGreen: '#EAEEEC' /* 👎 */,
   bgEmotionYellow: '#FCF1BB' /* 😄 */,
@@ -14,10 +14,15 @@ export const bgColors = {
   bgEmotionGrassGreen: '#DBF1D4' /* 🌴 */,
 }
 
-export const colors = {
-  ...bgColors,
+export const textColours = {
   white: 'white',
   black: 'black',
+  darkGreen: '#006400',
+}
+
+export const colours = {
+  ...bgColours,
+  ...textColours,
   none: 'none',
   transparent: 'transparent',
 }
