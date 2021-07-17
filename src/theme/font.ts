@@ -50,8 +50,8 @@ const buttonLineHeights = {
   button2: 1.2,
 }
 
-export const fontSerif = 'Kazimir, Georgia, serif'
-export const fontSansSerif = 'Graphik, Arial, sans-serif'
+export const fontSerif = 'Spectral, Georgia, serif'
+export const fontSansSerif = 'Karla, Arial, sans-serif'
 
 export const font = {
   fonts: {
