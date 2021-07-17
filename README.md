@@ -38,17 +38,3 @@ yarn docz:serve
 ```sh
 yarn build
 ```
-
-## Setup
-
-```sh
-yarn
-```
-
-## Build Docker image for local development
-
-Use Docker [`build`](https://docs.docker.com/engine/reference/commandline/build/) command:
-
-```shell
-docker build -t web-ui-kit .
-```
