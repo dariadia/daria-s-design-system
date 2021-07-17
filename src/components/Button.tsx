@@ -77,7 +77,7 @@ const StyledBadge = styled(Box)<Props>`
   &:hover {
     border: ${({ activeColor }) =>
       activeColor ? `1px solid ${colours[activeColor]}` : 'none'};
-    color: ${({ activeColor, color = 'darkGreen' }) =>
+    color: ${({ activeColor, color = 'accent' }) =>
       activeColor ? colours[activeColor] : colours[color]};
     transition: all ${({ transition }) => transitions[transition || 'default']};
   }

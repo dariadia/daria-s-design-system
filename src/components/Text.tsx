@@ -32,14 +32,14 @@ export const HeadingText: React.FC<ConstrainedTextProps> = ({
 )
 
 export const HeadingH1: React.FC<ConstrainedTextProps> = (props) => (
-  <HeadingText variant="head1" as="h1" {...props} />
+  <HeadingText variant="headingLarge" as="h1" {...props} />
 )
 
 export const HeadingH2: React.FC<ConstrainedTextProps> = (props) => (
-  <HeadingText variant="head2" as="h2" {...props} />
+  <HeadingText variant="headingMedium" as="h2" {...props} />
 )
 export const HeadingH3: React.FC<ConstrainedTextProps> = (props) => (
-  <HeadingText variant="head3" as="h3" {...props} />
+  <HeadingText variant="headingSmall" as="h3" {...props} />
 )
 
 export const Text: React.FC<ConstrainedTextProps> = (props) => (
@@ -51,7 +51,7 @@ export const HoverableText = styled(TextBase)<ConstrainedTextProps>`
     cursor: pointer;
     transition: ${transitions.default} color;
     color: ${({ activeColor }) =>
-      activeColor ? colours[activeColor] : colours.darkGreen};
+      activeColor ? colours[activeColor] : colours.accent};
   }
 `
 
