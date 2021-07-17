@@ -1,6 +1,6 @@
 export const bgColours = {
   bgEmotionOrange: '#FEEDCA' /* 👍 */,
-  bgEmotionGryishGreen: '#EAEEEC' /* 👎 */,
+  bgEmotionGreyishGreen: '#EAEEEC' /* 👎 */,
   bgEmotionYellow: '#FCF1BB' /* 😄 */,
   bgEmotionRed: '#FBE2E2' /* 🚀 */,
   bgEmotionSkyBlue: '#DFF7F9' /* 🎯 */,
