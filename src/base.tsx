@@ -58,14 +58,14 @@ const isGradientFill = (colorValue?: string): boolean =>
 
 export const BaseBox = React.forwardRef<any, BoxSxProps>(
   ({ bg, sx, ...rest }, ref) => {
-    const { colors: themeColors } = useContext(ThemeContext)
-    const bgColorValue = themeColors[bg as string]
-    const isGradient = isGradientFill(bgColorValue)
+    const { colours: themeColours } = useContext(ThemeContext)
+    const BgColourValue = themeColours[bg as string]
+    const isGradient = isGradientFill(BgColourValue)
 
     const props = {
       sx: {
         ...sx,
-        ...(isGradient && { backgroundImage: bgColorValue }),
+        ...(isGradient && { backgroundImage: BgColourValue }),
       },
       ...(!isGradient && { bg }),
       ...rest,
