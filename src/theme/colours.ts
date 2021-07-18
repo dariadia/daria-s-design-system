@@ -24,3 +24,15 @@ export const colours = {
   none: 'none',
   transparent: 'transparent',
 }
+
+export const blackWhiteColors = {
+  white: 'white',
+  black: 'black',
+  accentDark: '#191919',
+  accentLightest: '#7f7f7f',
+  accentLight: '#7f7f7f',
+  complimentaryDark: '#191919',
+  complimentaryLight: '#7f7f7f',
+  none: 'none',
+  transparent: 'transparent',
+}

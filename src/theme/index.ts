@@ -48,5 +48,10 @@ export const mainTheme = {
   colours: ThemeColours.colours,
 }
 
+export const blackAndWhiteTheme = {
+  ...baseTheme,
+  colours: ThemeColours.blackWhiteColors,
+}
+
 export type ThemeType = typeof mainTheme
 export { sizes } from './breakpoints'
