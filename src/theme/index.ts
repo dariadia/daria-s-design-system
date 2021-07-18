@@ -27,6 +27,20 @@ const baseTheme = {
   filters,
   transitions,
   zIndices,
+
+  variants: {
+    link: {
+      cursor: 'pointer',
+    },
+    button: {
+      badge: {
+        textTransform: 'uppercase',
+        borderRadius: 'circle',
+        width: 'fit-content',
+        lineHeight: 2.2,
+      },
+    },
+  },
 }
 
 export const mainTheme = {
