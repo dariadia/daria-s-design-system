@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { BaseProps, BoxSxProps, SxStyleProp } from '../index.d'
 import css, { Theme } from '@styled-system/css'
 
-import { theme, Space } from '../theme'
+import { mainTheme as theme, Space } from '../theme'
 
 export interface ListProps extends BoxSxProps {
   direction?: 'row' | 'column'

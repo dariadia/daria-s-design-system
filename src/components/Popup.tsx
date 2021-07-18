@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { bgColours } from '../theme/colours'
-import { theme } from '../theme'
+import { mainTheme as theme } from '../theme'
 import { transitions } from '../theme/transitions'
 
 import { Box, ConstrainedBoxProps } from '../components'
@@ -18,8 +18,8 @@ const Overlay = styled(Box)<ConstrainedBoxProps>`
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: ${theme.zIndices.heavens};
-  background: ${bgColours.bgEmotionDarkBlue};
+  z-index: ${theme.zIndices.topOfTheWorld};
+  background: ${bgColours.complimentaryDark};
   animation: fadeIn ${transitions.default};
 `
 

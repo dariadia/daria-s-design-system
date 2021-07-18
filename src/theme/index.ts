@@ -1,9 +1,10 @@
 import { breakpoints } from './breakpoints'
 import { space } from './space'
 import * as ThemeColours from './colours'
-import { font } from './font'
+import { fonts } from './fonts'
 import { radii } from './radii'
 import { shadows } from './shadows'
+import { zIndices } from './zIndices'
 import { filters } from './filters'
 import { transitions } from './transitions'
 
@@ -17,47 +18,21 @@ export type Filter = keyof typeof filters
 export type Transition = keyof typeof transitions
 export type Space = keyof typeof space
 
-export const theme = {
+const baseTheme = {
   breakpoints,
   space,
-  colours: ThemeColours.colours,
-  ...font,
-
+  ...fonts,
   radii,
   shadows,
   filters,
   transitions,
-
-  variants: {
-    link: {
-      cursor: 'pointer',
-    },
-    circle: {
-      borderRadius: 'circle',
-    },
-    button: {
-      primary: {
-        borderRadius: 'xs',
-      },
-      badge: {
-        textTransform: 'uppercase',
-        borderRadius: 'circle',
-        width: 'fit-content',
-        height: 'fit-content',
-      },
-    },
-  },
-
-  zIndices: {
-    lowest: -2,
-    low: -1,
-    default: 0,
-    above: 1,
-    high: 1000,
-    highest: 1001,
-    heavens: 9999,
-  },
+  zIndices,
 }
 
-export type ThemeType = typeof theme
+export const mainTheme = {
+  ...baseTheme,
+  colours: ThemeColours.colours,
+}
+
+export type ThemeType = typeof mainTheme
 export { sizes } from './breakpoints'

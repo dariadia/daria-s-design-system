@@ -11,7 +11,7 @@ export const UsePopupDemo: React.FC<Popup> = ({ children, popupOptions }) => {
   return (
     <>
       <Button
-        bg="bgEmotionGrassGreen"
+        bg="accentDark"
         color="white"
         width="200px"
         p="l"

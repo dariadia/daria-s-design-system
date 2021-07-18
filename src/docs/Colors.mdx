@@ -14,7 +14,7 @@ import { Grid } from '../components'
 Accessible from `theme/colours.ts`
 Types:
 - `bgColours`
-- `TextColours`
+- `textColours`
 
 ## Info
 
@@ -22,139 +22,121 @@ Types:
 
 <Grid sx={{gridTemplateColumns: 'repeat(3, 1fr)'}}>
   <Box
-    bg="bgEmotionOrange"
+    bg="white"
     width="200px"
     height="200px"
     textAlign="center"
     my="l"
     color="black"
-  >bgEmotionOrange</Box>
+  >white</Box>
   <Box
-    bg="bgEmotionGryishGreen"
+    bg="accentDark"
     width="200px"
     height="200px"
     textAlign="center"
     my="l"
-    color="black"
-  >bgEmotionGryishGreen</Box>
+    color="white"
+  >accentDark</Box>
   <Box
-    bg="bgEmotionYellow"
+    bg="complimentaryDark"
     width="200px"
     height="200px"
     textAlign="center"
     my="l"
     color="black"
-  >bgEmotionYellow</Box>
+  >complimentaryDark</Box>
   <Box
-    bg="bgEmotionRed"
+    bg="accentLight"
     width="200px"
     height="200px"
     textAlign="center"
     my="l"
     color="black"
-  >bgEmotionRed</Box>
+  >accentLight</Box>
   <Box
-    bg="bgEmotionSkyBlue"
+    bg="complimentaryLight"
     width="200px"
     height="200px"
     textAlign="center"
     my="l"
     color="black"
-  >bgEmotionSkyBlue</Box>
+  >complimentaryLight</Box>
   <Box
-    bg="bgEmotionBlue"
+    bg="accentLightest"
     width="200px"
     height="200px"
     textAlign="center"
     my="l"
     color="black"
-  >bgEmotionBlue</Box>
-  <Box
-    bg="bgEmotionDarkBlue"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionDarkBlue</Box>
-    <Box
-    bg="bgEmotionBrown"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionBrown</Box>
-    <Box
-    bg="bgEmotionPink"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionPink</Box>
-    <Box
-    bg="bgEmotionMint"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionMint</Box>
-    <Box
-    bg="bgEmotionSkin"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionSkin</Box>
-    <Box
-    bg="bgEmotionPurple"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionPurple</Box>
-    <Box
-    bg="bgEmotionGrey"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionGrey</Box>
-    <Box
-    bg="bgEmotionGrassGreen"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionGrassGreen</Box>
-    <Box
-    bg="bgEmotionDarkBrown"
-    width="200px"
-    height="200px"
-    textAlign="center"
-    my="l"
-    color="black"
-  >bgEmotionDarkBrown</Box>
+  >accentLightest</Box>
 </Grid>
 
 
 ### Text Colours
 <Grid sx={{gridTemplateColumns: 'repeat(3, 1fr)'}}>
   <Box
-    bg="bgEmotionOrange"
+    bg="accentDark"
     sx={{ borderRadius: 'l' }}
     width="300px"
     p="m"
     textAlign="center"
     my="l"
     color="white"
+  >white</Box>
+  <Box
+    bg="accentLightest"
+    sx={{ borderRadius: 'l' }}
+    width="300px"
+    p="m"
+    textAlign="center"
+    my="l"
+    color="black"
   >black</Box>
+  <Box
+    bg="accentLightest"
+    sx={{ borderRadius: 'l' }}
+    width="300px"
+    p="m"
+    textAlign="center"
+    my="l"
+    color="accentDark"
+  >accentDark</Box>
+  <Box
+    bg="accentDark"
+    sx={{ borderRadius: 'l' }}
+    width="300px"
+    p="m"
+    textAlign="center"
+    my="l"
+    color="accentLight"
+  >accentLight</Box>
+  <Box
+    bg="accentLightest"
+    sx={{ borderRadius: 'l' }}
+    width="300px"
+    p="m"
+    textAlign="center"
+    my="l"
+    color="complimentaryDark"
+  >complimentaryDark</Box>
+  <Box
+    bg="accentDark"
+    sx={{ borderRadius: 'l' }}
+    width="300px"
+    p="m"
+    textAlign="center"
+    my="l"
+    color="complimentaryLight"
+  >complimentaryLight</Box>
+  <Box
+    bg="accentDark"
+    sx={{ borderRadius: 'l' }}
+    width="300px"
+    p="m"
+    textAlign="center"
+    my="l"
+    color="accentLightest"
+  >accentLightest</Box>
 </Grid>
 
 ## Advanced?
@@ -162,7 +144,7 @@ Types:
 <Playground>
   <Grid sx={{gridTemplateColumns: 'repeat(3, 1fr)'}}>
     <Box
-      bg="bgEmotionOrange"
+      bg="accentDark"
       width="200px"
       height="200px"
       textAlign="center"
@@ -170,7 +152,7 @@ Types:
       color="white"
     >A box</Box>
     <Box
-      bg="bgEmotionGrassGreen"
+      bg="accentLightest"
       width="200px"
       height="200px"
       textAlign="center"

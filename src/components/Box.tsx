@@ -1,7 +1,7 @@
 import React from 'react'
 import { BaseBox } from '../base'
 
-import { Colour, BgColour, BorderRadius, theme } from '../theme'
+import { Colour, BgColour, BorderRadius, mainTheme as theme } from '../theme'
 import { Elevation } from '../theme/index'
 import { BoxSxProps } from '../index.d'
 

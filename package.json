@@ -1,5 +1,5 @@
 {
-  "name": "@dariadia/danni-kit",
+  "name": "danni-s-design-system",
   "version": "0.1.2",
   "license": "MIT",
   "files": [
@@ -14,7 +14,7 @@
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve -p $PORT"
   },
-  "repository": "git@github.com:dariadia/danni-kit.git",
+  "repository": "git@github.com:dariadia/danni-s-design-system.git",
   "devDependencies": {
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
