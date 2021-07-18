@@ -1,3 +1,5 @@
+// Based on https://blog.sapegin.me/til/react/generating-typescript-react-components-from-svg-icons-using-svgr/
+
 // First run
 // npm install --save-dev @svgr/core @svgr/plugin-svgo @svgr/plugin-prettier glob
 
