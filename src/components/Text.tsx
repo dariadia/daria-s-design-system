@@ -51,7 +51,7 @@ export const HoverableText = styled(TextBase)<ConstrainedTextProps>`
     cursor: pointer;
     transition: ${transitions.default} color;
     color: ${({ activeColor }) =>
-      activeColor ? colours[activeColor] : colours.accent};
+      activeColor ? colours[activeColor] : colours.accentDark};
   }
 `
 

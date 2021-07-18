@@ -4,6 +4,7 @@ import * as ThemeColours from './colours'
 import { fonts } from './fonts'
 import { radii } from './radii'
 import { shadows } from './shadows'
+import { zIndices } from './zIndices'
 import { filters } from './filters'
 import { transitions } from './transitions'
 
@@ -25,6 +26,7 @@ const baseTheme = {
   shadows,
   filters,
   transitions,
+  zIndices,
 }
 
 export const mainTheme = {

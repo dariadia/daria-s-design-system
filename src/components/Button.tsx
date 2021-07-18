@@ -28,7 +28,7 @@ const StyledButton = styled(Box)<Props>`
         }`
       : 'none'};
   &:hover {
-    border: ${({ border, borderOnHover = 'textAccent' }) =>
+    border: ${({ border, borderOnHover = 'accentDark' }) =>
       border
         ? `${border.split(' ')[0]} ${border.split(' ')[1]} ${
             colours[borderOnHover as Colour]
@@ -77,7 +77,7 @@ const StyledBadge = styled(Box)<Props>`
   &:hover {
     border: ${({ activeColor }) =>
       activeColor ? `1px solid ${colours[activeColor]}` : 'none'};
-    color: ${({ activeColor, color = 'accent' }) =>
+    color: ${({ activeColor, color = 'accentDark' }) =>
       activeColor ? colours[activeColor] : colours[color]};
     transition: all ${({ transition }) => transitions[transition || 'default']};
   }
