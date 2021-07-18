@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { bgColours } from '../theme/colours'
-import { theme } from '../theme'
+import { mainTheme as theme } from '../theme'
 import { transitions } from '../theme/transitions'
 
 import { Box, ConstrainedBoxProps } from '../components'

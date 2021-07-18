@@ -1,7 +1,7 @@
 export const fontSerif = 'Spectral, Georgia, serif'
 export const fontSansSerif = 'Karla, Arial, sans-serif'
 
-export const font = {
+export const fonts = {
   typography: {
     headingSerif: {
       headingLarge: {

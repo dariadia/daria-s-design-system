@@ -7,7 +7,7 @@
 * Styled Components
 
 ```js
-import { theme } from '@dariadia/danni-kit'
+import { mainTheme as theme } from '@dariadia/danni-kit'
 import { ThemeProvider } from "styled-components"
 
 export const App = ({ children }) =>
