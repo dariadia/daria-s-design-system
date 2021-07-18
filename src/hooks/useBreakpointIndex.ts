@@ -1,3 +1,5 @@
+// Based on https://medium.com/@alexandereardon/uselayouteffect-and-ssr-192986cdcf7a
+
 import { useState, useEffect, useLayoutEffect, useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { defaultOptions } from './types'
