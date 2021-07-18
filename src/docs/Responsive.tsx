@@ -10,11 +10,11 @@ export const UseBreakpointIndexDemo: React.FC = () => {
 
   const responsiveValue = useResponsiveValue([
     'it is mobile',
-    'it is larger one',
+    'it is larger than mobile',
   ])
 
   return (
-    <Box width={1} height="200px" p="l" bg="accentDark">
+    <Box width={1} height="200px" p="l">
       <Text p="s">Breakpoint index: {bp}</Text>
       <Text p="s" variant="body2">
         Media matches map: {JSON.stringify(matches, null, 2)}
