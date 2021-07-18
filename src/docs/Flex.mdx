@@ -6,11 +6,15 @@ menu: Components
 
 import { Playground, Props } from 'docz'
 
-import { Flex } from '../components'
+import { Flex, Text } from '../components'
 
 # Flex
 
-Flex is flex-box
+Flex is a flexbox block. [The Flexbox Layout (Flexible Box)](https://www.w3.org/TR/css-flexbox/) module aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
+
+The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.
+
+Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).
 
 ## Properties
 
@@ -32,9 +36,8 @@ Flex is flex-box
     p="xl"
     justifyContent="space-between"
     alignItems="center"
-    fontSize="32px"
   >
-    <b>A</b>
-    <span>z</span>
+    <Text variant="bodySmall">Hallo</Text>
+    <Text variant="body">Welt</Text>
   </Flex>
 </Playground>

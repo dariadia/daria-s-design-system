@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet-async'
 import { ThemeProvider } from 'styled-components'
-import { theme } from '../../../src/theme'
+import { mainTheme as theme } from '../../../src/theme'
 
 const Wrapper = ({ children }) => {
   return (

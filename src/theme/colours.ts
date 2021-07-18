@@ -5,6 +5,7 @@ export const bgColours = {
   accentLight: '#E2D3C0',
   complimentaryLight: '#A9AD90',
   accentLightest: '#DBDDD0',
+  overlay: 'rgba(0, 0, 0, 0.3)',
 }
 
 export const textColours = {

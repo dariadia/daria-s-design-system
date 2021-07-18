@@ -52,12 +52,11 @@ const _BaseBox = styled('div').withConfig<BoxSxProps>({
   compose(space, layout, typography, color, flexbox),
 )
 
-// fix bg color
 const isGradientFill = (colorValue?: string): boolean =>
   !!(colorValue && colorValue.includes('gradient'))
 
 export const BaseBox = React.forwardRef<any, BoxSxProps>(
-  ({ bg, sx, ...rest }, ref) => {
+  ({ bg, color, sx, ...rest }, ref) => {
     const { colours: themeColours } = useContext(ThemeContext)
     const BgColourValue = themeColours[bg as string]
     const isGradient = isGradientFill(BgColourValue)
@@ -67,7 +66,8 @@ export const BaseBox = React.forwardRef<any, BoxSxProps>(
         ...sx,
         ...(isGradient && { backgroundImage: BgColourValue }),
       },
-      ...(!isGradient && { bg }),
+      ...(!isGradient && { bg: themeColours[bg as string] }),
+      color: themeColours[color as string],
       ...rest,
     }
 

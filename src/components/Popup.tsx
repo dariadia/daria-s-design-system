@@ -19,7 +19,7 @@ const Overlay = styled(Box)<ConstrainedBoxProps>`
   bottom: 0;
   right: 0;
   z-index: ${theme.zIndices.topOfTheWorld};
-  background: ${bgColours.complimentaryDark};
+  background: ${bgColours.overlay};
   animation: fadeIn ${transitions.default};
 `
 

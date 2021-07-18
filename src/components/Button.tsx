@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Colour, TextColour, Filter, Transition } from '../theme'
+import { Colour, TextColour, Filter, Transition, BgColour, Space, mainTheme as theme} from '../theme'
 import { colours } from '../theme/colours'
 import { filters } from '../theme/filters'
 import { transitions } from '../theme/transitions'
@@ -71,7 +71,7 @@ export const Badge: React.FC<Props> = ({ children, ...props }) => {
 
 const StyledBadge = styled(Box)<Props>`
   display: ${({ inlineBlock }) => (inlineBlock ? 'inline-block' : 'block')};
-  background: none;
+  background: ${({ bg }) => (bg ? theme.colours[bg as BgColour] : 'none')};
   cursor: ${({ disabled }) => (disabled ? 'initial' : 'pointer')};
   border: ${({ color }) => (color ? `1px solid ${colours[color]}` : 'none')};
   &:hover {

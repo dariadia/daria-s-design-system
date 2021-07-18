@@ -10,7 +10,7 @@ import { List, Badge } from '../components'
 
 # List
 
-List is an `<ul>` element with the corresponding `<li>` schildren. List is better for SEO than just using `<Flex />`.
+List is an `<ul>` element with the corresponding `<li>` children. Styles can be applied to the list as whole as well to the children separately.
 
 
 ## Properties
@@ -28,8 +28,12 @@ List is an `<ul>` element with the corresponding `<li>` schildren. List is bette
 ## Advanced?
 
 <Playground>
-  <List liSx={{ border: '1px solid red'}} direction="row">
+  <List liSx={{ border: '1px solid blue'}} direction="row">
     <Badge inlineBlock m="s" bg="accentDark" color="white">Hello world</Badge>
     <Badge inlineBlock m="s" bg="accentDark" color="white">Hallo Welt</Badge>
+  </List>
+  <List>
+    <Badge inlineBlock m="s" bg="complimentaryDark" color="white">Sample</Badge>
+    <Badge inlineBlock m="s" bg="complimentaryLight" color="white">Lorem ipsum</Badge>
   </List>
 </Playground>

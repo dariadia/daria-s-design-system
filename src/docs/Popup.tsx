@@ -11,8 +11,8 @@ export const UsePopupDemo: React.FC<Popup> = ({ children, popupOptions }) => {
   return (
     <>
       <Button
-        bg="accentDark"
-        color="white"
+        bg="accentLight"
+        color="black"
         width="200px"
         p="l"
         onClick={() => togglePopup(!popupShown)}
@@ -21,6 +21,7 @@ export const UsePopupDemo: React.FC<Popup> = ({ children, popupOptions }) => {
       </Button>
       {popupShown && (
         <Popup
+          m="auto"
           mode="sized"
           width="400px"
           p="l"

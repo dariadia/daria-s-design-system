@@ -10,7 +10,7 @@ import { Box, Card } from '../components'
 
 # Box
 
-Box is box
+Box is a block. It might be used as base for different components.
 
 ## Properties
 
@@ -19,30 +19,13 @@ Box is box
 ## Basic usage
 
 <pre>
-  <Box>Empty box</Box>
+  <Box>Hello world in a box</Box>
 </pre>
 
 ## Advanced?
 
 <Playground>
-<Box bg="accentDark" sx={{ borderRadius: "m" }} width="400px" p="xs" my="l" textAlign="center">Sample box</Box>
-
-
-<Box
-  bg="accentDark" 
-  color="black" 
-  sx={{ borderRadius: "circle" }}
-  width="200px"
-  height="200px"
-  p="l"
-  display="flex"
-  flex={1}
-  justifyContent="center"
-  alignItems="center"
-  fontSize="144px"
->
-  BM
-</Box>
-<Card mt="xl" p="m" bg="accentDark" width="450px">Hello world. Hallo Welt! Guten Morgen</Card>
+  <Box bg="accentDark" color="accentLightest" sx={{ borderRadius: "m" }} width="400px" p="xs" my="l" textAlign="center">Sample box</Box>
+  <Card mt="xl" p="m" bg="complimentaryDark" color="white" width="450px">Hello world. Hallo Welt! Guten Morgen</Card>
 </Playground>
 
