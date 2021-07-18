@@ -1,46 +1,48 @@
 export const fontSerif = 'Spectral, Georgia, serif'
 export const fontSansSerif = 'Karla, Arial, sans-serif'
 
+const headingSizes = {
+  headingLarge: 94,
+  headingMedium: 64,
+  headingSmall: 34,
+}
+
+const baseLineHeight = 1.2
+
 export const fonts = {
   typography: {
     headingSerif: {
       headingLarge: {
-        fontSize: 'heading.headingLarge',
-        lineHeight: 'heading.headingLarge',
-        fontWeight: 'semibold',
+        fontSize: headingSizes.headingLarge,
+        lineHeight: baseLineHeight,
         fontFamily: fontSerif,
       },
       headingMedium: {
-        fontSize: 'heading.headingMedium',
-        lineHeight: 'heading.headingMedium',
-        fontWeight: 'semibold',
+        fontSize: headingSizes.headingMedium,
+        lineHeight: baseLineHeight,
         fontFamily: fontSerif,
       },
       headingSmall: {
-        fontSize: 'heading.headingSmall',
-        lineHeight: 'heading.headingSmall',
-        fontWeight: 'semibold',
+        fontSize: headingSizes.headingSmall,
+        lineHeight: baseLineHeight,
         fontFamily: fontSerif,
       },
     },
 
     headingSansSerif: {
       headingLarge: {
-        fontSize: 'heading.headingLarge',
-        lineHeight: 'heading.headingLarge',
-        fontWeight: 'semibold',
+        fontSize: headingSizes.headingLarge,
+        lineHeight: baseLineHeight,
         fontFamily: fontSansSerif,
       },
       headingMedium: {
-        fontSize: 'heading.headingMedium',
-        lineHeight: 'heading.headingMedium',
-        fontWeight: 'semibold',
+        fontSize: headingSizes.headingMedium,
+        lineHeight: baseLineHeight,
         fontFamily: fontSansSerif,
       },
       headingSmall: {
-        fontSize: 'heading.headingSmall',
-        lineHeight: 'heading.headingSmall',
-        fontWeight: 'semibold',
+        fontSize: headingSizes.headingSmall,
+        lineHeight: baseLineHeight,
         fontFamily: fontSansSerif,
       },
     },
@@ -48,12 +50,12 @@ export const fonts = {
     text: {
       bodySmall: {
         fontSize: '14px',
-        lineHeight: '1.2',
+        lineHeight: baseLineHeight,
         fontFamily: fontSansSerif,
       },
       body: {
         fontSize: '20px',
-        lineHeight: '1.2',
+        lineHeight: baseLineHeight,
         fontFamily: fontSansSerif,
       },
     },

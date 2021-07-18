@@ -9,8 +9,8 @@ export const UseBreakpointIndexDemo: React.FC = () => {
   const matches = useMediaMatch()
 
   const responsiveValue = useResponsiveValue([
-    'it is mobile',
-    'it is larger than mobile',
+    'is mobile',
+    'is larger than mobile',
   ])
 
   return (
