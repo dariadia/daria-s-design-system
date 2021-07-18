@@ -1,20 +1,20 @@
 export const bgColours = {
   white: 'white',
-  green: '#07624D',
-  meadow: '#169D75',
-  bone: '#E2D3C0',
-  locust: '#A9AD90',
-  mist: '#DBDDD0',
+  accentDark: '#07624D',
+  complimentaryDark: '#169D75',
+  accentLight: '#E2D3C0',
+  complimentaryLight: '#A9AD90',
+  accentLightest: '#DBDDD0',
 }
 
 export const textColours = {
   white: 'white',
   black: 'black',
-  accent: '#07624D',
-  bone: '#E2D3C0',
-  meadow: '#169D75',
-  locust: '#A9AD90',
-  mist: '#DBDDD0',
+  accentDark: '#07624D',
+  accentLightest: '#DBDDD0',
+  accentLight: '#E2D3C0',
+  complimentaryDark: '#169D75',
+  complimentaryLight: '#A9AD90',
 }
 
 export const colours = {
