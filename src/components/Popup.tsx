@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { bgColours } from '../theme/colours'
 import { mainTheme as theme } from '../theme'
-import { transitions } from '../theme/transitions'
+import { transitions } from '../theme/timing'
 
 import { Box, ConstrainedBoxProps } from '../components'
 
