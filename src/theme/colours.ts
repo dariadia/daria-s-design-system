@@ -16,6 +16,7 @@ export const textColours = {
   accentLight: '#E2D3C0',
   complimentaryDark: '#169D75',
   complimentaryLight: '#A9AD90',
+  darkest: '#04362a',
 }
 
 export const colours = {
@@ -35,4 +36,6 @@ export const blackWhiteColors = {
   complimentaryLight: '#7f7f7f',
   none: 'none',
   transparent: 'transparent',
+  overlay: 'rgba(0, 0, 0, 0.3)',
+  darkest: '#222423',
 }
