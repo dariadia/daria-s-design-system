@@ -1,0 +1,27 @@
+---
+name: Circle
+route: /components/Circle
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { Circle } from '../components'
+
+# Circle
+
+Circle is a geometric figure built from `<Box />`.
+
+## Properties
+<Props of={Circle} />
+
+## Basic usage
+<Circle bg="accentDark"/>
+
+### Advanced
+
+<Playground>
+  <Circle bg="accentDark" size="elephant" inlineBlock />
+  <Circle bg="accentLightest" size="s" inlineBlock />
+  <Circle bg="black" inlineBlock />
+</Playground>
