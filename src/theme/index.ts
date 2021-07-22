@@ -18,7 +18,7 @@ export type Filter = keyof typeof filters
 export type Transition = keyof typeof transitions
 export type Space = keyof typeof space
 
-const baseTheme = {
+export const baseTheme = {
   breakpoints,
   space,
   ...fonts,
