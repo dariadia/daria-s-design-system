@@ -1,6 +1,6 @@
 {
   "name": "danni-s-design-system",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "files": [
     "lib",
@@ -66,5 +66,8 @@
     "hooks": {
       "pre-commit": "lint-staged -c lint-staged.config.js"
     }
+  },
+  "dependencies": {
+    "uglifyjs-webpack-plugin": "^2.2.0"
   }
 }

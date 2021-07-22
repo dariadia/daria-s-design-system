@@ -6,7 +6,7 @@ import { radii } from './radii'
 import { shadows } from './shadows'
 import { zIndices } from './zIndices'
 import { filters } from './filters'
-import { transitions } from './transitions'
+import { transitions, easings, durations } from './timing'
 
 export type Colour = keyof typeof ThemeColours.colours
 export type BgColour = keyof typeof ThemeColours.bgColours
@@ -26,6 +26,8 @@ export const baseTheme = {
   shadows,
   filters,
   transitions,
+  easings,
+  durations,
   zIndices,
 
   variants: {

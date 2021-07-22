@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Colour, TextColour, Filter, Transition, BgColour, Space, mainTheme as theme} from '../theme'
 import { colours } from '../theme/colours'
 import { filters } from '../theme/filters'
-import { transitions } from '../theme/transitions'
+import { transitions } from '../theme/timing'
 import { Box, ConstrainedBoxProps } from './Box'
 
 type Props = {

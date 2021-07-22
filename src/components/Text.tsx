@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Box, ConstrainedBoxProps } from './Box'
 import { TextColour } from '../theme'
 import { colours } from '../theme/colours'
-import { transitions } from '../theme/transitions'
+import { transitions } from '../theme/timing'
 
 export interface ConstrainedTextProps extends ConstrainedBoxProps {
   color?: TextColour

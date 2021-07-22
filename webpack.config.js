@@ -1,5 +1,5 @@
 const path = require('path');
-
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
@@ -34,6 +34,9 @@ module.exports = {
   },
   stats: {
     logging: 'verbose'
+  },
+  optimization: {
+    minimizer: [new UglifyJsPlugin()],
   },
   plugins: [
     process.env.ANALYZE === 'true' && new BundleAnalyzerPlugin({

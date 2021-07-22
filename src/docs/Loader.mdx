@@ -1,0 +1,26 @@
+---
+name: Loader
+route: /components/Loader
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { Loader } from '../components'
+
+# Loader
+
+Loader is a moving element which indicates that something is in process, e.g. the current page is loading.
+
+## Properties
+<Props of={Loader} />
+
+## Basic usage
+<Loader />
+
+### Advanced
+
+<Playground>
+  <Loader color="accentDark" duration="turtle" size="xxl" inlineBlock />
+  <Loader color="complementaryDark" inlineBlock />
+</Playground>
