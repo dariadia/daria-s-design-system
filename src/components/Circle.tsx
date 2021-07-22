@@ -8,10 +8,11 @@ export interface CircleProps extends ConstrainedBoxProps {
   image?: string
 }
 
-export const Circle = styled(Box)<CircleProps>`
+export const Circle = styled(Box).attrs({
+  borderRadius: 'circle',
+})<CircleProps>`
   align-items: center;
   justify-content: center;
-  border-radius: 9999px;
   width: ${({ size }) =>
     size ? `${theme.space[size as Space]}px` : `${theme.space.xxl}px`};
   height: ${({ size }) =>
