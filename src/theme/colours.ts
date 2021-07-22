@@ -36,5 +36,6 @@ export const blackWhiteColors = {
   complimentaryLight: '#7f7f7f',
   none: 'none',
   transparent: 'transparent',
+  overlay: 'rgba(0, 0, 0, 0.3)',
   darkest: '#222423',
 }
