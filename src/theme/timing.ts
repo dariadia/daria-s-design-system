@@ -1,9 +1,13 @@
 export const transitions = {
   none: '0s',
-  slow: '0.5s',
-  default: '0.3s',
   fast: '0.1s',
+  default: '0.3s',
+  slow: '0.5s',
+  giraffe: '1.2s',
+  turtle: '2.2s',
 }
+
+export type Transition = keyof typeof transitions
 
 export const easing = {
   DEFAULT: 'default',
