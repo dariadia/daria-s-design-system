@@ -8,4 +8,5 @@ export const space = {
   xxl: 32,
   xxxl: 40,
   elephant: 90,
+  dinosaur: 200,
 }
