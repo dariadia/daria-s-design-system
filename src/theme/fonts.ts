@@ -48,12 +48,17 @@ export const fonts = {
     },
 
     text: {
-      bodySmall: {
+      bodySm: {
         fontSize: '14px',
         lineHeight: baseLineHeight,
         fontFamily: fontSansSerif,
       },
-      body: {
+      bodyMd: {
+        fontSize: '18px',
+        lineHeight: baseLineHeight,
+        fontFamily: fontSansSerif,
+      },
+      bodyLg: {
         fontSize: '20px',
         lineHeight: baseLineHeight,
         fontFamily: fontSansSerif,
