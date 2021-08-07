@@ -46,7 +46,9 @@ export const Text: React.FC<ConstrainedTextProps> = (props) => (
   <TextBase scale="typography.text" {...props} />
 )
 
-export const HoverableText = styled(Text)<ConstrainedTextProps>`
+export const HoverableText = styled(TextBase).attrs({
+  scale: 'typography.text',
+})<ConstrainedTextProps>`
   &:hover {
     cursor: pointer;
     transition: ${transitions.default} color;
