@@ -55,6 +55,11 @@ export const HoverableText = styled(TextBase).attrs({
     color: ${({ activeColor }) =>
       activeColor ? colours[activeColor] : colours.accentDark};
   }
+  &:hover > span {
+    transition: ${transitions.default} color;
+    color: ${({ activeColor }) =>
+      activeColor ? colours[activeColor] : colours.accentDark};
+  }
 `
 
 export const Caption: React.FC<ConstrainedTextProps> = (props) => (
