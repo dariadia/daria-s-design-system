@@ -5,7 +5,7 @@ import { ConstrainedBoxProps, Box } from '.'
 import { baseTheme } from '..'
 
 export type DetailsProps = {
-  summary?: Node | Node[]
+  summary?: React.ReactNode | React.ReactNode[]
   open?: boolean
   withMarker?: { closed: string; open: string }
 } & ConstrainedBoxProps
