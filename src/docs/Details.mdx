@@ -27,12 +27,14 @@ Details is a block based on the [HTML `<details />`](https://developer.mozilla.o
 ## Advanced?
 
 <Playground>
-  <Details open withMarker={{closed: '👋🏽', open: '🖖🏽'}}
+  <Details 
+    open
+    m="xl"
     summary={<Box px="xxl" bg="accentDark" color="accentLight" inlineBlock>Lorem ipsum</Box>}
   >
     <Box color="accentDark" width="400px" py="s">Sample box</Box>
   </Details>
-  <Details mt="xl" summary="Lorem ipsum">
+  <Details withMarker={{closed: '👋🏽', open: '🖖🏽'}} summary="Lorem ipsum">
     <Box py="s">Sample box</Box>
   </Details>
 </Playground>

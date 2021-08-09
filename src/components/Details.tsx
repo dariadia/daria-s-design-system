@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { ConstrainedBoxProps, Box } from '.'
+import { baseTheme } from '..'
 
 export type DetailsProps = {
   summary?: Node | Node[]
@@ -9,17 +10,20 @@ export type DetailsProps = {
   withMarker?: { closed: string; open: string }
 } & ConstrainedBoxProps
 
-const StyledDetails = styled(Box).attrs((props: DetailsProps) => ({
+const StyledDetails = styled(Box).attrs(({ open, ...props }: DetailsProps) => ({
   as: 'details',
-  open: props.open || false,
+  open: open || false,
+  ...props,
 }))<DetailsProps>`
   ${({ withMarker }) =>
     withMarker &&
     `> summary:before {
       content: '${withMarker.closed}';
+      margin-right: ${baseTheme.space.s}px;
     }
     &[open] summary:before {
       content: '${withMarker.open}';
+      margin-right: ${baseTheme.space.s}px;
     }`}
   &:hover {
     cursor: pointer;
