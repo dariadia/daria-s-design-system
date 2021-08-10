@@ -25,7 +25,7 @@ const StyledDetails = styled(Box).attrs(({ open, ...props }: DetailsProps) => ({
       content: '${withMarker.open}';
       margin-right: ${baseTheme.space.s}px;
     }`}
-  &:hover {
+  > summary:hover {
     cursor: pointer;
   }
 `
