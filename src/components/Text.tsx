@@ -9,7 +9,7 @@ import { transitions } from '../theme/timing'
 export interface ConstrainedTextProps extends ConstrainedBoxProps {
   color?: TextColour
   kind?: 'serif' | 'sansSerif'
-  activeColor?: TextColour
+  activeColour?: TextColour
 }
 
 export const TextBase: React.FC<ConstrainedTextProps> = React.forwardRef<
@@ -52,13 +52,13 @@ export const HoverableText = styled(TextBase).attrs({
   &:hover {
     cursor: pointer;
     transition: ${transitions.default} color;
-    color: ${({ activeColor }) =>
-      activeColor ? colours[activeColor] : colours.accentDark};
+    color: ${({ activeColour }) =>
+      activeColour ? colours[activeColour] : colours.accentDark};
   }
   &:hover > span {
     transition: ${transitions.default} color;
-    color: ${({ activeColor }) =>
-      activeColor ? colours[activeColor] : colours.accentDark};
+    color: ${({ activeColour }) =>
+      activeColour ? colours[activeColour] : colours.accentDark};
   }
 `
 
