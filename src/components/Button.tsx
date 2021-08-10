@@ -12,7 +12,7 @@ type Props = {
   border?: string
   borderOnHover?: Colour
   colourOnHover?: TextColour
-  activeColor?: Colour
+  activeColour?: Colour
   filter?: Filter
   transition?: Transition
 } & ConstrainedBoxProps
@@ -40,10 +40,10 @@ const StyledButton = styled(Box)<Props>`
           ? colours[colourOnHover as Colour]
           : colours[borderOnHover as Colour]
         : color};
-    background-color: ${({ activeColor, bg }) =>
-      activeColor ? colours[activeColor] : bg};
-    filter: ${({ activeColor, filter, disabled }) =>
-      activeColor || disabled ? 'none' : filters[filter || 'semi']};
+    background-color: ${({ activeColour, bg }) =>
+      activeColour ? colours[activeColour] : bg};
+    filter: ${({ activeColour, filter, disabled }) =>
+      activeColour || disabled ? 'none' : filters[filter || 'semi']};
     transition: all ${({ transition }) => transitions[transition || 'default']};
   }
 `
@@ -75,10 +75,10 @@ const StyledBadge = styled(Box)<Props>`
   cursor: ${({ disabled }) => (disabled ? 'initial' : 'pointer')};
   border: ${({ color }) => (color ? `1px solid ${colours[color]}` : 'none')};
   &:hover {
-    border: ${({ activeColor }) =>
-      activeColor ? `1px solid ${colours[activeColor]}` : 'none'};
-    color: ${({ activeColor, color = 'accentDark' }) =>
-      activeColor ? colours[activeColor] : colours[color]};
+    border: ${({ activeColour }) =>
+      activeColour ? `1px solid ${colours[activeColour]}` : 'none'};
+    color: ${({ activeColour, color = 'accentDark' }) =>
+      activeColour ? colours[activeColour] : colours[color]};
     transition: all ${({ transition }) => transitions[transition || 'default']};
   }
 `
