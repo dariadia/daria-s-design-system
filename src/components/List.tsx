@@ -52,21 +52,3 @@ export const List: React.FC<ListProps> = ({ children, ...props }) => (
       ))}
   </StyledList>
 )
-
-export const FlexList: React.FC<ListProps> = ({ children, ...props }) => (
-  <StyledList {...props}>
-    {children &&
-      children.map((child: React.ReactNode, index: number) => (
-        <li key={index}>{child}</li>
-      ))}
-  </StyledList>
-)
-
-export const GridList: React.FC<ListProps> = ({ children, ...props }) => (
-  <StyledList {...props}>
-    {children &&
-      children.map((child: React.ReactNode, index: number) => (
-        <li key={index}>{child}</li>
-      ))}
-  </StyledList>
-)
