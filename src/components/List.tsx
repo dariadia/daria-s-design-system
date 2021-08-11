@@ -12,6 +12,7 @@ export interface ListProps extends BoxSxProps {
   children: React.ReactNode[]
   liSx?: SxStyleProp
   theme?: Theme
+  display?: 'grid' | 'flex'
 }
 
 const sx = (props: BaseProps) => css(props.sx)(props.theme)
@@ -20,7 +21,14 @@ const base = (props: BaseProps) => css(props.__css)(props.theme)
 
 const StyledList = styled('ul')<ListProps>`
   box-sizing: border-box;
-  display: ${({ inlineBlock }) => (inlineBlock ? 'inline-block' : 'block')};
+  display: ${({ display, inlineBlock }) =>
+    display === 'grid'
+      ? 'grid'
+      : display === 'flex'
+      ? 'flex'
+      : inlineBlock
+      ? 'inline-block'
+      : 'block'};
   list-style: none;
   padding: ${({ p }) => (p ? theme.space[p as Space] : '0')};
   margin: ${({ m }) => (m ? theme.space[m as Space] : '0')};
