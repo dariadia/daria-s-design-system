@@ -10,13 +10,20 @@ export interface ConstrainedTextProps extends ConstrainedBoxProps {
   color?: TextColour
   kind?: 'serif' | 'sansSerif'
   activeColour?: TextColour
+  bold?: boolean
 }
 
 export const TextBase: React.FC<ConstrainedTextProps> = React.forwardRef<
   any,
   ConstrainedTextProps
->(({ as = 'span', ...rest }, ref) => (
-  <Box as={as} ref={ref} scale="typography" {...rest} />
+>(({ as = 'span', bold, ...rest }, ref) => (
+  <Box
+    as={as}
+    ref={ref}
+    fontWeight={bold ? 'bold' : 'normal'}
+    scale="typography"
+    {...rest}
+  />
 ))
 
 export const HeadingText: React.FC<ConstrainedTextProps> = ({
