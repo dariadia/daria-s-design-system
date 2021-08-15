@@ -26,6 +26,7 @@ const Overlay = styled(Box)<ConstrainedBoxProps>`
 const StyledPopup = styled(Box)<PopupProps>`
   max-width: ${({ mode }) => (mode === 'sized' ? 'calc(100% - 16px)' : '100%')};
   background: ${({ bg }) => (bg ? bgColours[bg] : 'white')};
+  overflow: scroll;
 `
 
 export const Popup: React.FC<PopupProps> = ({
