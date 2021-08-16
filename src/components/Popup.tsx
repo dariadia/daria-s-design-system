@@ -9,7 +9,7 @@ import { Box, ConstrainedBoxProps } from '../components'
 
 export interface PopupProps extends ConstrainedBoxProps {
   mode?: 'full' | 'sized'
-  onClose?: (event?: Event) => void
+  onClose?: (args?: unknown) => void
 }
 
 const Overlay = styled(Box)<ConstrainedBoxProps>`
