@@ -61,9 +61,10 @@ export interface VariantProps {
 }
 
 export interface BoxSxProps extends BoxProps, SxProps {
-  onClick?: (args?: any) => void
-  onSubmit?: (args?: any) => void
-  ref?: any
+  onClick?: (args?: unknown) => void
+  onSubmit?: (args?: unknown) => void
+  id?: string
+  ref?: unknown
   role?: string
   ariaLabel?: string
   children?: React.ReactNode
