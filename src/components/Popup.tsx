@@ -28,7 +28,7 @@ const Overlay = styled(Box)<ConstrainedBoxProps>`
 const StyledPopup = styled(Box).attrs((props: PopupProps) => ({
   role: 'dialog',
   'aria-labelledby': props.ariaLabelledby,
-  'aria-describedby': props.ariaLabelledby,
+  'aria-describedby': props.ariaDescribedby,
 }))<PopupProps>`
   max-width: ${({ mode }) => (mode === 'sized' ? 'calc(100% - 16px)' : '100%')};
   background: ${({ bg }) => (bg ? bgColours[bg] : 'white')};
