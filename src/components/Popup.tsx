@@ -9,6 +9,8 @@ import { Box, ConstrainedBoxProps } from '../components'
 
 export interface PopupProps extends ConstrainedBoxProps {
   mode?: 'full' | 'sized'
+  ariaLabelledby: string
+  ariaDescribedby: string
   onClose?: (args?: any) => void
 }
 
@@ -23,7 +25,11 @@ const Overlay = styled(Box)<ConstrainedBoxProps>`
   animation: fadeIn ${transitions.default};
 `
 
-const StyledPopup = styled(Box)<PopupProps>`
+const StyledPopup = styled(Box).attrs((props: PopupProps) => ({
+  role: 'dialog',
+  'aria-labelledby': props.ariaLabelledby,
+  'aria-describedby': props.ariaLabelledby,
+}))<PopupProps>`
   max-width: ${({ mode }) => (mode === 'sized' ? 'calc(100% - 16px)' : '100%')};
   background: ${({ bg }) => (bg ? bgColours[bg] : 'white')};
   overflow: scroll;
