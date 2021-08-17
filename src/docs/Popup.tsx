@@ -25,6 +25,8 @@ export const UsePopupDemo: React.FC<Popup> = ({ children, popupOptions }) => {
           mode="sized"
           width="400px"
           p="l"
+          ariaLabelledby="heading"
+          ariaDescribedby="content"
           onClose={() => togglePopup(!popupShown)}
         >
           {children}
