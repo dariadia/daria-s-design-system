@@ -47,8 +47,10 @@ const StyledList = styled('ul')<ListProps>`
 export const List: React.FC<ListProps> = ({ children, ...props }) => (
   <StyledList {...props}>
     {children &&
-      children.map((child: React.ReactNode, index: number) => (
-        <li key={index}>{child}</li>
-      ))}
+      children.map((child: React.ReactNode, index: number) =>
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        child?.type === 'br' ? <br /> : <li key={index}>{child}</li>,
+      )}
   </StyledList>
 )
