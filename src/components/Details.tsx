@@ -34,6 +34,9 @@ const StyledDetails = styled(Box).attrs(({ open, ...props }: DetailsProps) => ({
   &:focus {
     outline: none;
   }
+  > summary:focus {
+    outline: none;
+  }
 `
 
 export const Details = React.forwardRef<any, DetailsProps>(
