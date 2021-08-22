@@ -28,6 +28,12 @@ const StyledDetails = styled(Box).attrs(({ open, ...props }: DetailsProps) => ({
   > summary:hover {
     cursor: pointer;
   }
+  > summary::-webkit-details-marker {
+    display: none;
+  }
+  &:focus {
+    outline: none;
+  }
 `
 
 export const Details = React.forwardRef<any, DetailsProps>(
