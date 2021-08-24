@@ -15,16 +15,18 @@ export type StarProps = {
 export const Star: React.FC<StarProps> = styled(Box)<StarProps>`
   margin: 50px 0;
   position: relative;
-  color: ${({colour = 'accentDark'}) => colours[colour as Colour]};
+  color: ${({ colour = 'accentDark' }) => colours[colour as Colour]};
   width: 0px;
   height: 0px;
   border-right: 100px solid transparent;
-  border-bottom: 70px solid ${({colour = 'accentDark'}) => colours[colour as Colour]};
+  border-bottom: 70px solid
+    ${({ colour = 'accentDark' }) => colours[colour as Colour]};
   border-left: 100px solid transparent;
-  transform: rotate(35deg) ${({transform}) => transform};
+  transform: rotate(35deg) ${({ transform }) => transform};
 
   &:before {
-    border-bottom: 80px solid ${({colour = 'accentDark'}) => colours[colour as Colour]};
+    border-bottom: 80px solid
+      ${({ colour = 'accentDark' }) => colours[colour as Colour]};
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     position: absolute;
@@ -39,13 +41,14 @@ export const Star: React.FC<StarProps> = styled(Box)<StarProps>`
   &:after {
     position: absolute;
     display: block;
-    color: ${({colour = 'accentDark'}) => colours[colour as Colour]};
+    color: ${({ colour = 'accentDark' }) => colours[colour as Colour]};
     top: 3px;
     left: -105px;
     width: 0px;
     height: 0px;
     border-right: 100px solid transparent;
-    border-bottom: 70px solid ${({colour = 'accentDark'}) => colours[colour as Colour]};
+    border-bottom: 70px solid
+      ${({ colour = 'accentDark' }) => colours[colour as Colour]};
     border-left: 100px solid transparent;
     transform: rotate(-70deg);
     content: '';

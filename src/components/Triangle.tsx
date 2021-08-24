@@ -40,8 +40,9 @@ export const TriangleLeft: React.FC<TriangleProps> = styled(Box)<TriangleProps>`
   height: 0;
   border-top: ${({ top = baseTheme.space.lion }) => top}px solid transparent;
   border-right: ${({ right = baseTheme.space.elephant }) => right}px solid
-  ${({ colour = 'accentDark' }) => colours[colour as Colour]};
-  border-bottom: ${({ bottom = baseTheme.space.lion }) => bottom}px solid transparent;
+    ${({ colour = 'accentDark' }) => colours[colour as Colour]};
+  border-bottom: ${({ bottom = baseTheme.space.lion }) => bottom}px solid
+    transparent;
 `
 
 export const TriangleRight: React.FC<TriangleProps> = styled(
@@ -51,6 +52,7 @@ export const TriangleRight: React.FC<TriangleProps> = styled(
   height: 0;
   border-top: ${({ top = baseTheme.space.lion }) => top}px solid transparent;
   border-left: ${({ left = baseTheme.space.elephant }) => left}px solid
-  ${({ colour = 'accentDark' }) => colours[colour as Colour]};
-  border-bottom: ${({ bottom = baseTheme.space.lion }) => bottom}px solid transparent;
+    ${({ colour = 'accentDark' }) => colours[colour as Colour]};
+  border-bottom: ${({ bottom = baseTheme.space.lion }) => bottom}px solid
+    transparent;
 `
