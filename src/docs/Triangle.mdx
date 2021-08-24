@@ -1,0 +1,33 @@
+---
+name: Triangle
+route: /components/Triangle
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { TriangleUp, TriangleDown, TriangleLeft, TriangleRight } from '../components'
+
+# Triangle
+
+Triangle is a triangular block based on the `<Box />` component.
+
+## Properties
+
+<Props of={TriangleUp} />
+
+## Basic usage
+
+<pre>
+  <TriangleUp />
+</pre>
+
+## Advanced?
+
+<Playground>
+   <TriangleUp m="m" inlineBlock />
+   <TriangleDown m="m" colour="accentLightest" inlineBlock />
+   <TriangleLeft m="m" inlineBlock />
+   <TriangleRight m="m" colour="accentLight" inlineBlock />
+</Playground>
+
