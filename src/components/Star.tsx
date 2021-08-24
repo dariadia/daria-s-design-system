@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Box } from '.'
 
 import { ConstrainedBoxProps } from '../index.d'
-import { baseTheme, Colour } from '../theme'
+import { Colour } from '../theme'
 import { colours } from '../theme/colours'
 
 export type StarProps = {
