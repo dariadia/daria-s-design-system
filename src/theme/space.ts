@@ -7,6 +7,7 @@ export const space = {
   xl: 24,
   xxl: 32,
   xxxl: 40,
+  lion: 50,
   elephant: 90,
   dinosaur: 200,
 }
