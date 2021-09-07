@@ -50,11 +50,7 @@ export const List: React.FC<ListProps> = ({ children, ...props }) => (
       children.map((child: React.ReactNode, index: number) =>
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        child?.type?.target === 'br' || 'h3' ? (
-          child
-        ) : (
-          <li key={index}>{child}</li>
-        ),
+        child?.type?.target === 'br' ? child : <li key={index}>{child}</li>,
       )}
   </StyledList>
 )
