@@ -1,0 +1,46 @@
+---
+name: Scroller Horizontal
+route: /components/HorizontalScroller
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+
+import { HorizontalScroller, Box, Button } from '../components'
+
+# Horizontal Scroller
+
+Horizontal Scroller is a box (`<List />`) with children. One can scroll the elements inside the box as its overflow is hidden but horizontally scrollable.
+
+## Properties
+
+<Props of={HorizontalScroller} />
+
+## Basic usage
+
+<pre>
+  <HorizontalScroller>
+    <Box m="s" py="s" px="l" sx={{ border: '1px solid black'}}>Lorem ipsum</Box>
+    <Box m="s" py="s" px="l" sx={{ border: '1px solid black'}}>Hello world</Box>
+    <Box m="s" py="s" px="l" sx={{ border: '1px solid black'}}>Hallo</Box>
+    <Box m="s" py="s" px="l" sx={{ border: '1px solid black'}}>Da bin ich</Box>
+    <Box m="s" py="s" px="l" sx={{ border: '1px solid black'}}>Sample box</Box>
+    <Box m="s" py="s" px="l" sx={{ border: '1px solid black'}}>Hello world</Box>
+  </HorizontalScroller>
+</pre>
+
+## Advanced?
+
+<Playground>
+  <HorizontalScroller>
+    <Button m="s" bg="accentDark" py="s" px="xxl">Lorem ipsum</Button>
+    <Button m="s" py="s" px="xxl">Hello world</Button>
+    <Button m="s" bg="accentLightest" py="s" px="xxl">Hallo</Button>
+    <Button m="s" bg="accentDark" py="s" px="xxl">Da bin ich</Button>
+    <Button m="s" py="s" px="xxl">Sample box</Button>
+    <Button m="s" bg="accentLight" py="s" px="xxl">Hello world</Button>
+    <Button m="s" py="s" px="xxl">Lorem ipsum</Button>
+    <Button m="s" bg="accentLightest" py="s" px="xxl">Hello world</Button>
+  </HorizontalScroller>
+</Playground>
+
