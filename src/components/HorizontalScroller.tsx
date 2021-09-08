@@ -1,14 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { List, ListProps } from '.'
+import { List, ListProps } from './List'
 import { Space, baseTheme } from '../theme'
-
-type Props = ListProps
 
 const StyledScroller = styled(List).attrs({
   direction: 'row',
-})<Props>`
+})<ListProps>`
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -17,6 +15,6 @@ const StyledScroller = styled(List).attrs({
   -webkit-overflow-scrolling: touch;
 `
 
-export const HorizontalScroller: React.FC<Props> = ({ children, ...props }) => {
+export const HorizontalScroller: React.FC<ListProps> = ({ children, ...props }) => {
   return <StyledScroller {...props}>{children}</StyledScroller>
 }
