@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box } from '../components/Box'
-import { Text } from '../components/Text'
+import { Box, List, Text } from '../components'
 import { useBreakpointIndex, useMediaMatch } from '../hooks'
 import { useResponsiveValue } from '../hooks/useResponsiveValue'
 
@@ -8,19 +7,23 @@ export const UseBreakpointIndexDemo: React.FC = () => {
   const bp = useBreakpointIndex()
   const matches = useMediaMatch()
 
-  const responsiveValue = useResponsiveValue([
-    'is mobile',
-    'is larger than mobile',
-  ])
+  const responsiveValue = useResponsiveValue(['mobile', 'tablet', 'desktop'])
+
+  const matchesValues = Object.values(matches)
+  const matchesKeys = Object.keys(matches)
 
   return (
-    <Box width={1} height="200px" p="l">
-      <Text p="s">Breakpoint index: {bp}</Text>
-      {console.log(matches)}
-      <Text p="s" variant="body2">
-        Media matches map: {JSON.stringify(matches, null, 2)}
-      </Text>
-      <Text p="s">Responsive value: {responsiveValue} </Text>
+    <Box width={1} height="200px">
+      <Text p="s">Breakpoint index: {bp}.</Text>
+      <Text p="s">This is: {responsiveValue}</Text>
+      <Text p="s">Matched list:</Text>
+      <List p="m">
+        {matchesKeys.map((match, index) => (
+          <Text key={match}>
+            {match}: {matchesValues[index].toString()}
+          </Text>
+        ))}
+      </List>
     </Box>
   )
 }
