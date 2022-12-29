@@ -24,7 +24,7 @@ module.exports = {
     path: path.resolve(__dirname, 'lib'),
     libraryTarget: 'umd',
     globalObject: 'this',
-    library: 'danni-s-design-system',
+    library: 'daria-s-design-system',
   },
   externals : {
     react: 'commonjs react',

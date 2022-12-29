@@ -1,5 +1,4 @@
 // Based on https://blog.sapegin.me/til/react/generating-typescript-react-components-from-svg-icons-using-svgr/
-
 // First run
 // npm install --save-dev @svgr/core @svgr/plugin-svgo @svgr/plugin-prettier glob
 
@@ -11,7 +10,6 @@ const svgr = require('@svgr/core').default;
 const ICONS_SOURCE_DIR = 'assets/icons';
 const COMPONENTS_DIR = 'result';
 
-// Template to generate named exports instead of default ones
 const iconComponentTemplate = (
   { template },
   opts,
@@ -32,15 +30,11 @@ for (const icon of icons) {
     svg,
     {
       template: iconComponentTemplate,
-      // 1. Clean SVG files using SVGO
-      // 2. Generate JSX
-      // 3. Format the result using Prettier
       plugins: [
         '@svgr/plugin-svgo',
         '@svgr/plugin-jsx',
         '@svgr/plugin-prettier'
       ],
-      // Replace hardcoded colours with `currentColor`
       svgoConfig: {
         plugins: [{ convertColors: { currentColor: true } }]
       },
