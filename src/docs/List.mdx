@@ -1,7 +1,7 @@
 ---
 name: List
 route: /components/List
-menu: Components
+menu: 2. Components
 ---
 
 import { Playground, Props } from 'docz'
@@ -20,21 +20,23 @@ List is an `<ul>` element with the corresponding `<li>` children. Styles can be 
 ## Basic usage
 
 <List>
-  <span>I am a cool book!</span>
-  <span>Hello world</span>
-  <span>Lorem ipsum</span>
+  <span>buy coffee</span>
+  <span>cook coffee</span>
+  <span>be happy</span>
 </List>
 
 ## Advanced
 
 <Playground>
   <List liSx={{ border: '1px solid blue'}} direction="row">
-    <Badge inlineBlock m="s" bg="accentDark" color="white">Hello world</Badge>
+    <Badge inlineBlock m="s" bg="accentDark" color="white">Jane's Badge</Badge>
     <br />
-    <Badge inlineBlock m="s" bg="accentDark" color="white">Hallo Welt</Badge>
+    <Badge inlineBlock m="s" bg="accentDark" color="white">John's Badge</Badge>
   </List>
   <List>
-    <Badge inlineBlock m="s" bg="complementaryDark" color="white">Sample</Badge>
-    <Badge inlineBlock m="s" bg="complementaryLight" color="white">Lorem ipsum</Badge>
+    <Badge inlineBlock m="s" bg="complementaryDark" color="white">Roisin</Badge>
+    <Badge inlineBlock m="s" bg="complementaryLight" color="white">Violet</Badge>
+    <Badge inlineBlock m="s" bg="complementaryLight" color="white">Keith</Badge>
+    <Badge inlineBlock m="s" bg="complementaryLight" color="white">Malik</Badge>
   </List>
 </Playground>
