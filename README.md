@@ -1,4 +1,4 @@
-# Daria's Web UI Kit
+# Daria's Design System
 - is a modular component library. Simple. Accessible. And gives you the building blocks to build your own React applications.
 
 ## Requirements
