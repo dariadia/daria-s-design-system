@@ -16,6 +16,7 @@ export const UseBreakpointIndexDemo: React.FC = () => {
   return (
     <Box width={1} height="200px" p="l">
       <Text p="s">Breakpoint index: {bp}</Text>
+      {console.log(matches)}
       <Text p="s" variant="body2">
         Media matches map: {JSON.stringify(matches, null, 2)}
       </Text>
