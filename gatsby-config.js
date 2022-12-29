@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Daria's Web UI Kit`
+    title: `Daria's Design System`
   },
   plugins: [
     {

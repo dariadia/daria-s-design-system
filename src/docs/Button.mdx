@@ -1,7 +1,7 @@
 ---
 name: Button
 route: /components/Button
-menu: Components
+menu: 2. Components
 ---
 
 import { Playground, Props } from 'docz'
@@ -22,7 +22,7 @@ Button is a box which one can click. It is rendered as `<button />` html element
   <Button onClick={() => alert('Hello World!')}>Click me!</Button>
 </pre>
 
-## Advanced?
+## Advanced
 
 <Playground>
   <Button
@@ -53,6 +53,6 @@ Button is a box which one can click. It is rendered as `<button />` html element
     transition="slow"
   >Hover me, and I change colour too</Button>
   <Badge bg="accentDark" color="white">Badge</Badge>
-  <TopicBadge my="l" color="black" activeColour="accentDark">Some topic</TopicBadge>
+  <TopicBadge my="l" color="accentDark" activeColour="accentLight">Some topic</TopicBadge>
 </Playground>
 

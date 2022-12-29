@@ -1,7 +1,7 @@
 ---
 name: Box
 route: /components/Box
-menu: Components
+menu: 2. Components
 ---
 
 import { Playground, Props } from 'docz'
@@ -19,13 +19,14 @@ Box is a block. It might be used as base for different components.
 ## Basic usage
 
 <pre>
-  <Box>Hello world in a box</Box>
+  <Box bg="white" color="black">Hello world in a box</Box>
 </pre>
 
-## Advanced?
+## Advanced
 
 <Playground>
-  <Box bg="accentDark" color="accentLightest" sx={{ borderRadius: "m" }} width="400px" p="xs" my="l" textAlign="center">Sample box</Box>
-  <Card mt="xl" p="m" bg="complementaryDark" color="white" width="450px">Hello world. Hallo Welt! Guten Morgen</Card>
+  <Box bg="accentDark" color="accentLightest" sx={{ borderRadius: "m" }} width="400px" p="xs" my="l" textAlign="center">I am a sample box</Box>
+  <Box bg="accentLightest" color="black" width="500px" p="m" my="l" textAlign="center">Hello world</Box>
+    <Box bg="darkest" color="accentLightest" width="200px" textAlign="center" p="l" my="l">Good morning!</Box>
 </Playground>
 

@@ -1,7 +1,7 @@
 ---
 name: Details
 route: /components/Details
-menu: Components
+menu: 2. Components
 ---
 
 import { Playground, Props } from 'docz'
@@ -19,23 +19,22 @@ Details is a block based on the [HTML `<details />`](https://developer.mozilla.o
 ## Basic usage
 
 <pre>
-  <Details summary="Hello world in a box">
-    <Box>Hello world! Read all about this</Box>
+  <Details summary="Click me to read more about this">
+    <Box>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Box>
   </Details>
 </pre>
 
-## Advanced?
+## Advanced
 
 <Playground>
   <Details 
-    open
     m="xl"
-    summary={<Box px="xxl" bg="accentDark" color="accentLight" inlineBlock>Lorem ipsum</Box>}
+    summary={<Box px="xxl" bg="accentDark" color="accentLight" inlineBlock>Lorem ipsum is:</Box>}
   >
-    <Box color="accentDark" width="400px" py="s">Sample box</Box>
+    <Box mb="l" color="accentDark" width="400px" py="s">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Box>
   </Details>
   <Details withMarker={{closed: '👋🏽', open: '🖖🏽'}} summary="Lorem ipsum">
-    <Box py="s">Sample box</Box>
+    <Box py="s">Good morning to you too! Sample text goes here</Box>
   </Details>
 </Playground>
 

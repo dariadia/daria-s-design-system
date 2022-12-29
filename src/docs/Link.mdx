@@ -1,7 +1,7 @@
 ---
 name: Link
 route: /components/Link
-menu: Components
+menu: 2. Components
 ---
 
 import { Playground, Props } from 'docz'
@@ -18,12 +18,12 @@ Link is either an `<a>` element or a `<span>` element (aka pseudo link). The pro
 
 ## Basic usage
 
-<Link href="https://www.google.com/">Google me!</Link>
+<Link href="https://www.google.com/" color="accentDark">Google me!</Link>
 
-## Advanced?
+## Advanced
 
 <Playground>
-  <Link href="https://en.wikipedia.org/wiki/The_Princess_and_the_Goblin_(film)" target="_blank">The Princess and the Goblin</Link>
+  <Link color="accentDark" href="https://en.wikipedia.org/wiki/The_Princess_and_the_Goblin_(film)" target="_blank">The Princess and the Goblin</Link>
   <br />
-  <Link onClick={() => alert('Hello world')}>You can't go to this link's page till something else happens</Link>
+  <Link color="accentLight" onClick={() => alert('Hello world')}>You can't go to this link's page till something else happens</Link>
 </Playground>

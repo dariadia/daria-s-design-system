@@ -1,7 +1,7 @@
 ---
 name: Text
 route: /components/Text
-menu: Components
+menu: 2. Components
 ---
 
 import { Playground, Props } from 'docz'
@@ -24,17 +24,16 @@ Text is a `<span />` with text.
 
 ## Basic usage
 
-<Text>Sample text</Text>
+<Text>Your text goes here</Text>
 
-## Advanced?
+## Advanced
 
 <Playground>
-  <HeadingH1 kind='serif'>Heading 1</HeadingH1>
-  <HeadingText variant="headingMedium">Heading 2</HeadingText>
-  <HeadingText variant="headingSmall">Heading 3</HeadingText>
-  <Caption color="complementaryLight">Some cool caption</Caption>
+  <HeadingH1 kind='serif'>Our offer</HeadingH1>
+  <HeadingText my="xl" variant="headingMedium">Our online marketplaces:</HeadingText>
+  <HeadingText my="xl" variant="headingSmall">Read the latest news</HeadingText>
+  <Caption my="l" color="complementaryLight">Some cool caption</Caption>
   <HoverableText variant="bodySm" activeColour="accentDark">
     <Text mr="xs" color="complementaryLight" inlineBlock>Hover me!</Text>
-    <Text inlineBlock>Hover me!</Text>
   </HoverableText>
 </Playground>
