@@ -9,7 +9,9 @@ const Wrapper = ({ children }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Daria's Design System</title>
+        <link rel="manifest" href="/favicon/site.webmanifest.json" />
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
         <link
           rel="preload"
           as="font"
