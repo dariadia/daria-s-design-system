@@ -8,7 +8,7 @@ module.exports = {
       options: {
         custom: {
           families: ["Spectral", "Karla"],
-          urls: ["/public/fonts/fonts.css"]
+          urls: ["/assets/fonts/fonts.css"]
         }
       }
     }
