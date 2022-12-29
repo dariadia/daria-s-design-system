@@ -9,7 +9,7 @@ const Wrapper = ({ children }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Danni's Web Ui Kit</title>
+        <title>Daria's Web Ui Kit</title>
         <link
           rel="preload"
           as="font"

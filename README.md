@@ -1,4 +1,6 @@
-# Danni's Web Ui Kit
+# Daria's Web UI Kit
+- is a modular component library. Simple. Accessible. And gives you the building blocks to build your own React applications.
+
 ## Requirements
 
 * React
@@ -6,8 +8,13 @@
 * Styled System
 * Styled Components
 
+## To install in your app
 ```js
-import { mainTheme as theme } from 'danni-s-design-system'
+npm i daria-s-design-system
+```
+
+```js
+import { mainTheme as theme } from 'daria-s-design-system'
 import { ThemeProvider } from "styled-components"
 
 export const App = ({ children }) =>
@@ -16,25 +23,10 @@ export const App = ({ children }) =>
   </ThemeProvider>
 ```
 
+## Library documentation:
 
-## Docz Documentation
-
-Local Dev:
+To run locally:
 ```sh
+yarn install
 yarn docz:dev
-```
-
-Build:
-```sh
-yarn docz:build
-```
-
-Serve:
-```sh
-yarn docz:serve
-```
-
-## Build app
-```sh
-yarn build
 ```
