@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Daria's Design System`
+    title: `Daria's Design System`,
+    description: "Modular component library. Simple. Accessible"
   },
   plugins: [
     {
