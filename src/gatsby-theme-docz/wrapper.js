@@ -9,6 +9,8 @@ const Wrapper = ({ children }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta data-rh="true" name="description" content="Modular component library. Simple. Accessible."/ >
+        <meta data-rh="true" name="twitter:description" content="Modular component library. Simple. Accessible." />
         <link rel="manifest" href="/assets/favicon/site.webmanifest.json" />
         <link rel="icon" href="/assets/favicon/favicon.ico" />
         <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png" />
