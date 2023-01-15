@@ -1,6 +1,6 @@
 {
   "name": "daria-s-design-system",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "files": [
     "lib",
@@ -68,6 +68,7 @@
     }
   },
   "dependencies": {
+    "gatsby-plugin-minify": "^0.5.0",
     "uglifyjs-webpack-plugin": "^2.2.0"
   }
 }

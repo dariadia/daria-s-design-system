@@ -12,6 +12,7 @@ module.exports = {
           urls: ["/assets/fonts/fonts.css"]
         }
       }
-    }
+    },
+    "gatsby-plugin-minify",
   ]
 };
